@@ -6,11 +6,13 @@ const ul = document.getElementById("task");
 function addTask(){
     if(input.value !== 0){
         const inputValue = input.value;
-        // const createButton = document.createElement('button').textContent= 'remove';
+        const createButton = document.createElement('button');
+        createButton.textContent= 'remove';
         creatingListItem = document.createElement('li');
-        creatingListItem.textcontent = inputValue;
+        creatingListItem.textContent = inputValue;
         ul.appendChild(creatingListItem);
-        ul.textcontent = `<li>${inputValue} <button>${button}</button></li>`;
+        ul.appendChild(createButton);
+        ul.textcontent = `<li>${inputValue} <button>${createButton}</button></li>`;;
     }
     else{
         console.log("error");
