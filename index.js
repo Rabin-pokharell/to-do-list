@@ -19,7 +19,7 @@ function addTask(){
         else{
             ul.appendChild(creatingListItem);
             ul.appendChild(createButton);
-            ul.textcontent = `<li>${inputValue} <button>${createButton}</button></li>`;
+            ul.textcontent = `<li>${inputValue} <button>${createButton}</button> </li>`;
             input.value = '';
         }
     }
@@ -27,6 +27,12 @@ function addTask(){
         console.log("error");
     }
 }
+
+input.addEventListener('keypress', (event) => {
+    if(event.key === 'Enter'){
+        addTask();
+    }
+});
 
 function removeTask(){
 
