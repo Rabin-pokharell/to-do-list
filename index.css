@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .to-do-list {
@@ -22,4 +23,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#remove {
+  margin-left: 4px;
+}
+
+#input {
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+#add-button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(120, 100%, 25%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+ul button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 100%);
 }

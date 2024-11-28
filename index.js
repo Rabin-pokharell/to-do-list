@@ -1,7 +1,7 @@
 const input = document.getElementById("input");
-const button = document.getElementsByClassName("remove-task");
 const ul = document.getElementById("task");
-const addButton = document.getElementById("add-button");
+
+
 
 
 function addTask(){
@@ -10,31 +10,38 @@ function addTask(){
         const createButton = document.createElement('button');
         const creatingListItem = document.createElement('li');
 
+
+        createButton.id = "remove";
+        // createButton.onClick = removeTask();
         createButton.textContent= 'remove';
         creatingListItem.textContent = inputValue;
 
+        createButton.addEventListener("click", () => {
+            ul.removeChild(creatingListItem);
+        })
+        
         if(inputValue === ''){
             console.log("error");
         }
         else{
             ul.appendChild(creatingListItem);
-            ul.appendChild(createButton);
-            ul.textcontent = `<li>${inputValue} <button>${createButton}</button> </li>`;
+            creatingListItem.appendChild(createButton);
+            // ul.textcontent = `<li>${creatingListItem} <button>${createButton}</button></li>`;    
             input.value = '';
         }
     }
     else{
         console.log("error");
     }
+    
 }
 
-input.addEventListener('keypress', (event) => {
+input.addEventListener('keypress', event => {
     if(event.key === 'Enter'){
         addTask();
     }
 });
 
-function removeTask(){
 
-}
+    
 
