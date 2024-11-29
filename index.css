@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: arial;
+font-family: sans-serif;
   
 }
 
@@ -10,36 +10,54 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fcff82;
+}
+h1{
+  font-size: 40px;
+  color: #a55233;
 }
 
-.to-do-list {
+
+.to-do-list { 
+  /* max-height: 70%; */
   align-items: center;
-  border: 2px solid;
   padding: 20px;
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px;
-  background-color: hsl(0, 0%, 50%);
+  width: 550px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 8px hsl(193, 65%, 14%);
+  background-color: #ff9c6d;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+}
+
+.to-do-list::-webkit-scrollbar{
+  width: 2px;
 }
 
 #remove {
   margin-left: 4px;
+
 }
 
 #input {
-  font-size: 1.5rem;
+  font-size: 18px;
+  height: 30px;
+  width: 340px;
   border-radius: 5px;
+  border: none;
+  text-align: center;
 }
 
 #add-button {
-  font-size: 1.5rem;
+  font-size: 20px;
+  margin-left: 20px;
+  width: 60px;
   border: none;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 10px;
   background-color: hsl(120, 100%, 25%);
   color: hsl(0, 0%, 100%);
-  margin-top: 5px;
 }
 
 ul {
@@ -49,13 +67,16 @@ ul {
 ul li {
   font-size: 1.5rem;
   margin-bottom: 5px;
+  color: white;
 }
 
 ul button {
-  font-size: 1.5rem;
+  font-size: 20px;
+  height: 30px;
+  width: 95px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 5px;
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(2, 83%, 55%);
   color: hsl(0, 0%, 100%);
 }

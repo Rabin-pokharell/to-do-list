@@ -19,6 +19,15 @@ function addTask(){
         createButton.addEventListener("click", () => {
             ul.removeChild(creatingListItem);
         })
+
+        createButton.addEventListener("mouseover", () => {
+            createButton.style.backgroundColor= "hsl(2, 83%, 45%)";
+            const audio= new Audio("")
+        })
+
+        createButton.addEventListener("mouseout", () => {
+            createButton.style.backgroundColor= "hsl(2, 83%, 55%)";
+        })
         
         if(inputValue === ''){
             console.log("error");
