@@ -13,7 +13,7 @@ function addTask(){
 
         createButton.id = "remove";
         // createButton.onClick = removeTask();
-        createButton.textContent= 'remove';
+        createButton.textContent= '🗑️';
         creatingListItem.textContent = inputValue;
 
         createButton.addEventListener("click", () => {
