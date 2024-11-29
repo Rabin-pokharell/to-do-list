@@ -79,4 +79,14 @@ ul button {
   margin-bottom: 5px;
   background-color: hsl(2, 83%, 55%);
   color: hsl(0, 0%, 100%);
+  /* margin-left: 10px; */
+}
+
+ul button:hover {
+  background-color: hsl(0, 100%, 40%);
+  transition: 0.5s ease-in;
+}
+
+ul button:active {
+  background-color: hsl(0, 100%, 30%);
 }
